@@ -1,7 +1,8 @@
 .DS_Store
+actual_images
 node_modules
 /dist
-
+storybook-static
 
 # local env files
 .env.local
@@ -21,3 +22,5 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.reg
+package-lock.json
