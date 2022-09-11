@@ -1,0 +1,21 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "actual_images",
+    "thresholdRate": 0,
+    "ximgdiff": {
+      "invocationType": "client"
+    }
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": true,
+    "reg-notify-github-plugin": {
+      "prComment": true,
+      "prCommentBehavior": "default",
+      "clientId": "MzU2NTY0MjYy1E8rSi3JTM5J1TeyNDQ0tjA10U/KTC/KLAMA"
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "reg-publish-bucket-605e8c62-4ab3-4fd3-89f6-7abadb93b3ba"
+    }
+  }
+}
