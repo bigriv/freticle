@@ -38,5 +38,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - sass-loader
   - node-sass
   - storybook
-  - storycap
-  - reg-suit
