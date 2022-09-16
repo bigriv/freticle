@@ -42,14 +42,14 @@ textarea {
   width: 100%;
   height: 100%;
   padding: 8px 12px;
-  background-color: #f0f0f0;
+  background-color: $COLOR_LIGHT_GRAY;
   border: none;
   &:focus-visible {
     outline: none;
   }
   &:disabled {
-    background-color: #ccc;
-    color: #333;
+    background-color: $COLOR_GRAY;
+    color: $COLOR_DARK_GRAY;
     cursor: not-allowed;
   }
 }

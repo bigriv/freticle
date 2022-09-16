@@ -72,13 +72,13 @@ input[type="radio"] {
   appearance: none;
   + label {
     padding: 4px 8px;
-    border: 1px solid #ff7a00;
+    border: 1px solid $COLOR_ORANGE;
     border-radius: 4px;
   }
   &:checked {
     + label {
-      background-color: #ff7a00;
-      color: #fff;
+      background-color: $COLOR_ORANGE;
+      color: $COLOR_WHITE;
       transition: all 0.3s ease-out;
     }
   }

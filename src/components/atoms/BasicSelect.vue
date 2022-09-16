@@ -82,11 +82,11 @@ export default defineComponent({
     height: 100%;
     text-align: left;
     cursor: pointer;
-    background-color: #fff;
-    border: 4px solid #000;
+    background-color: $COLOR_WHITE;
+    border: 4px solid $COLOR_BLACK;
     &::after {
       content: "";
-      border-top: 15px solid #000;
+      border-top: 15px solid $COLOR_BLACK;
       border-right: 8px solid transparent;
       border-left: 8px solid transparent;
       position: absolute;
@@ -98,7 +98,7 @@ export default defineComponent({
     }
   }
   .select-options {
-    border: 4px solid #000;
+    border: 4px solid $COLOR_BLACK;
     margin-top: 8px;
     .select-options-item {
       padding: 2px 4px;
@@ -106,9 +106,9 @@ export default defineComponent({
       border: none;
       display: block;
       text-align: left;
-      background-color: #fff;
+      background-color: $COLOR_WHITE;
       &:hover {
-        background-color: #ccc;
+        background-color: $COLOR_DARK_GRAY;
         cursor: pointer;
       }
     }

@@ -43,17 +43,17 @@ button {
   border: 0;
   &.primary {
     color: #fff;
-    background: #ff7a00;
-    border: #ff7a00 1px solid;
+    background: $COLOR_ORANGE;
+    border: $COLOR_ORANGE 1px solid;
   }
   &.secondary {
-    color: #ff7a00;
-    background: #fff;
-    border: #ff7a00 1px solid;
+    color: $COLOR_ORANGE;
+    background: $COLOR_WHITE;
+    border: $COLOR_ORANGE 1px solid;
   }
   &:hover {
     opacity: 0.6;
-    box-shadow: 1px 1px 2px #000;
+    box-shadow: 1px 1px 2px $COLOR_BLACK;
     transition: all 0.2s;
   }
   &:active {
