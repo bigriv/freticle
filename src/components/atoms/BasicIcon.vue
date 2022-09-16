@@ -1,5 +1,7 @@
 <template>
-  <font-awesome-icon :icon="icon" />
+  <div>
+    <font-awesome-icon :icon="icon" />
+  </div>
 </template>
 <script>
 import { defineComponent } from "vue";
