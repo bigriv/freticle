@@ -38,3 +38,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - sass-loader
   - node-sass
   - storybook
+  - jest
+  - moment
