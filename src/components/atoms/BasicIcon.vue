@@ -34,8 +34,6 @@ export default defineComponent({
 <style scoped lang="scss">
 .icon-wrap {
   display: inline-block;
-  width: 100%;
-  height: 100%;
   color: var(--icolor);
   .size {
     &-small {
