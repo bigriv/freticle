@@ -15,3 +15,12 @@ const Template = (args) => ({
 
 export const Default = Template.bind({});
 Default.args = { icon: "circle-user" };
+
+export const Red = Template.bind({});
+Red.args = { icon: "circle-user", color: "red" };
+
+export const Small = Template.bind({});
+Small.args = { icon: "circle-user", color: "black", size: "small" };
+
+export const Large = Template.bind({});
+Large.args = { icon: "circle-user", color: "black", size: "large" };

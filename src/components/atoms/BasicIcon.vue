@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <font-awesome-icon :icon="icon" />
+  <div class="icon-wrap" :style="`--icolor: ${color}`">
+    <font-awesome-icon :icon="icon" :class="`size-${size}`" />
   </div>
 </template>
 <script>
@@ -13,6 +13,17 @@ export default defineComponent({
       type: String,
       required: true,
     },
+    color: {
+      type: String,
+      default: undefined,
+    },
+    size: {
+      type: String,
+      default: "medium",
+      validator: (value) => {
+        return ["small", "medium", "large"].includes(value);
+      },
+    },
   },
   setup() {
     return {};
@@ -20,4 +31,25 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.icon-wrap {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: var(--icolor);
+  .size {
+    &-small {
+      width: 8px;
+      height: 8px;
+    }
+    &-medium {
+      width: 16px;
+      height: 16px;
+    }
+    &-large {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+</style>

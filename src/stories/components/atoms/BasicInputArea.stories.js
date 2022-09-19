@@ -14,11 +14,10 @@ const Template = (args) => ({
 });
 
 export const Default = Template.bind({});
-Default.args = { value: "テキスト", placeholder: "プレースホルダー" };
+Default.args = { placeholder: "プレースホルダー" };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  value: "テキスト",
   placeholder: "プレースホルダー",
   disabled: true,
 };
