@@ -12,9 +12,6 @@ export default defineComponent({
     icon: {
       type: String,
       required: true,
-      validator: (value) => {
-        return ["circle-user"].includes(value);
-      },
     },
   },
   setup() {

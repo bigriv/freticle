@@ -1,10 +1,12 @@
 <template>
-  <textarea
-    v-model="value"
-    type="text"
-    :placeholder="placeholder"
-    :disabled="disabled"
-  />
+  <div class="input-wrap">
+    <textarea
+      v-model="value"
+      type="text"
+      :placeholder="placeholder"
+      :disabled="disabled"
+    />
+  </div>
 </template>
 <script>
 import { computed, defineComponent } from "vue";
@@ -37,20 +39,23 @@ export default defineComponent({
 });
 </script>
 <style scoped lang="scss">
-textarea {
-  resize: none;
+.input-wrap {
   width: 100%;
-  height: 100%;
-  padding: 8px 12px;
-  background-color: $COLOR_LIGHT_GRAY;
-  border: none;
-  &:focus-visible {
-    outline: none;
-  }
-  &:disabled {
-    background-color: $COLOR_GRAY;
-    color: $COLOR_DARK_GRAY;
-    cursor: not-allowed;
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+    background-color: $COLOR_LIGHT_GRAY;
+    border: none;
+    &:focus-visible {
+      outline: none;
+    }
+    &:disabled {
+      background-color: $COLOR_GRAY;
+      color: $COLOR_DARK_GRAY;
+      cursor: not-allowed;
+    }
   }
 }
 </style>
