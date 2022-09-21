@@ -1,5 +1,5 @@
 <template>
-  <div :class="layout">
+  <div class="basic-radio" :class="layout">
     <div v-for="option in options" :key="option" class="raido-wrap">
       <input
         :id="`${name}_${option.value}`"
@@ -52,35 +52,42 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.horizontal {
+.basic-radio {
   display: flex;
+  padding: 8rem 4rem;
+  .raido-wrap {
+    input[type="radio"],
+    label {
+      margin: 0;
+      cursor: pointer;
+    }
+    label {
+      padding: 4rem 8rem;
+      border: 1rem solid $COLOR_ORANGE;
+      border-radius: 4rem;
+    }
+    input[type="radio"] {
+      appearance: none;
+      &:checked {
+        + label {
+          background-color: $COLOR_ORANGE;
+          color: $COLOR_WHITE;
+          transition: all 0.3s ease-out;
+        }
+      }
+    }
+  }
+}
+.horizontal {
+  flex-direction: row;
   .raido-wrap + .raido-wrap {
-    margin-left: 8px;
+    margin-left: 8rem;
   }
 }
 .vertical {
+  flex-direction: column;
   .raido-wrap + .raido-wrap {
-    margin-top: 16px;
-  }
-}
-input[type="radio"],
-label {
-  margin: 0;
-  cursor: pointer;
-}
-input[type="radio"] {
-  appearance: none;
-  + label {
-    padding: 4px 8px;
-    border: 1px solid $COLOR_ORANGE;
-    border-radius: 4px;
-  }
-  &:checked {
-    + label {
-      background-color: $COLOR_ORANGE;
-      color: $COLOR_WHITE;
-      transition: all 0.3s ease-out;
-    }
+    margin-top: 16rem;
   }
 }
 </style>

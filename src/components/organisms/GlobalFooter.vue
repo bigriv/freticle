@@ -47,9 +47,9 @@ footer {
   left: 0;
   z-index: 50;
   width: 100vw;
-  height: 30px;
+  height: 30rem;
   background-color: $COLOR_BROWN;
-  padding: 8px;
+  padding: 8rem;
   .footer-wrap {
     display: flex;
     justify-content: flex-end;
@@ -57,10 +57,10 @@ footer {
       display: flex;
       .link {
         color: $COLOR_WHITE;
-        font-size: 10px;
+        font-size: 10rem;
         font-weight: 300;
         + .link {
-          margin-left: 8px;
+          margin-left: 8rem;
         }
       }
     }

@@ -31,14 +31,14 @@ header {
   left: 0;
   z-index: 50;
   width: 100vw;
-  height: 40px;
+  height: 40rem;
   background-color: $COLOR_BROWN;
-  padding: 4px;
+  padding: 4rem;
   .header-wrap {
     display: flex;
     justify-content: space-between;
     .header-logo {
-      font-size: 28px;
+      font-size: 28rem;
       cursor: pointer;
       color: $COLOR_WHITE;
     }
@@ -47,7 +47,7 @@ header {
       .header-option-icon {
         cursor: pointer;
         + .header-option-icon {
-          margin-left: 16px;
+          margin-left: 16rem;
         }
       }
     }

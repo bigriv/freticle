@@ -45,7 +45,7 @@ export default defineComponent({
     resize: none;
     width: 100%;
     height: 100%;
-    padding: 8px 12px;
+    padding: 8rem 12rem;
     background-color: $COLOR_LIGHT_GRAY;
     border: none;
     &:focus-visible {

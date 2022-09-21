@@ -29,7 +29,7 @@ export default defineComponent({
       type: Array,
       default: () => [],
     },
-    default: {
+    placeholder: {
       type: String,
       default: "",
     },
@@ -38,7 +38,7 @@ export default defineComponent({
   setup(props, { emit }) {
     const state = reactive({
       isShowOptions: false,
-      label: props.default,
+      label: props.placeholder,
     });
     const value = computed({
       get: () => props.modelValue,
@@ -65,48 +65,49 @@ export default defineComponent({
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
-  transform: translateY(-8px);
+  transform: translateY(-8rem);
 }
 .v-enter-to,
 .v-leave-from {
   opacity: 1;
   transform: translateY(0);
+
 }
 .select-wrap {
   position: relative;
   width: 100%;
-  height: 40px;
+  height: 36rem;
   overflow: visible;
   .select-box {
     width: 100%;
     height: 100%;
     text-align: left;
     cursor: pointer;
-    background-color: $COLOR_WHITE;
-    border: 4px solid $COLOR_BLACK;
+    background-color: $COLOR_LIGHT_GRAY;
+    border: 4rem solid $COLOR_GRAY;
     &::after {
       content: "";
-      border-top: 15px solid $COLOR_BLACK;
-      border-right: 8px solid transparent;
-      border-left: 8px solid transparent;
+      border-top: 15rem solid $COLOR_GRAY;
+      border-right: 8rem solid transparent;
+      border-left: 8rem solid transparent;
       position: absolute;
       top: 50%;
-      right: 8px;
+      right: 8rem;
       transform: translateY(-50%);
       width: 0;
       height: 0;
     }
   }
   .select-options {
-    border: 4px solid $COLOR_BLACK;
-    margin-top: 8px;
+    border: 4rem solid $COLOR_GRAY;
+    margin-top: 8rem;
     .select-options-item {
-      padding: 2px 4px;
+      padding: 4rem 4rem;
       width: 100%;
       border: none;
       display: block;
       text-align: left;
-      background-color: $COLOR_WHITE;
+      background-color: $COLOR_LIGHT_GRAY;
       &:hover {
         background-color: $COLOR_DARK_GRAY;
         cursor: pointer;

@@ -81,7 +81,7 @@ export default defineComponent({
     position: relative;
     input {
       width: 100%;
-      padding: 8px 12px;
+      padding: 8rem 12rem;
       background-color: $COLOR_LIGHT_GRAY;
       border: none;
       &:focus {
@@ -97,7 +97,7 @@ export default defineComponent({
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 8px;
+      right: 8rem;
     }
   }
   .v-enter-active,
@@ -107,7 +107,7 @@ export default defineComponent({
   .v-enter-from,
   .v-leave-to {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(-8rem);
   }
   .v-enter-to,
   .v-leave-from {
@@ -116,7 +116,7 @@ export default defineComponent({
   }
   .calender {
     position: absolute;
-    top: 50px;
+    top: 50rem;
     left: 0;
   }
 }

@@ -37,16 +37,16 @@ export default defineComponent({
   color: var(--icolor);
   .size {
     &-small {
-      width: 8px;
-      height: 8px;
+      width: 8rem;
+      height: 8rem;
     }
     &-medium {
-      width: 16px;
-      height: 16px;
+      width: 16rem;
+      height: 16rem;
     }
     &-large {
-      width: 32px;
-      height: 32px;
+      width: 32rem;
+      height: 32rem;
     }
   }
 }

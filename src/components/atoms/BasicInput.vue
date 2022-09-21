@@ -57,11 +57,13 @@ export default defineComponent({
 <style scoped lang="scss">
 .input-wrap {
   width: 100%;
+  height: 36rem;
   input {
     width: 100%;
-    padding: 8px 12px;
+    height: 100%;
+    padding: 8rem 12rem;
     background-color: $COLOR_LIGHT_GRAY;
-    border: none;
+    border: 4rem solid $COLOR_GRAY;
     &:focus {
       outline: none;
     }

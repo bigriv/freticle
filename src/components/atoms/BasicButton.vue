@@ -43,21 +43,21 @@ export default defineComponent({
   button {
     width: 100%;
     cursor: pointer;
-    padding: 4px 20px;
+    padding: 4rem 20rem;
     border: 0;
     &.primary {
       color: #fff;
       background: $COLOR_ORANGE;
-      border: $COLOR_ORANGE 1px solid;
+      border: $COLOR_ORANGE 1rem solid;
     }
     &.secondary {
       color: $COLOR_ORANGE;
       background: $COLOR_WHITE;
-      border: $COLOR_ORANGE 1px solid;
+      border: $COLOR_ORANGE 1rem solid;
     }
     &:hover {
       opacity: 0.6;
-      box-shadow: 1px 1px 2px $COLOR_BLACK;
+      box-shadow: 1rem 1rem 2rem $COLOR_BLACK;
       transition: all 0.2s;
     }
     &:active {

@@ -56,7 +56,7 @@ export default defineComponent({
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 8px;
+    right: 8rem;
   }
 }
 </style>
