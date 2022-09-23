@@ -8,7 +8,11 @@
         :name="name"
         :value="option.value"
       />
-      <label :for="`${name}_${option.value}`">{{ option.label }}</label>
+      <label :for="`${name}_${option.value}`">
+        <span>
+          {{ option.label }}
+        </span>
+      </label>
     </div>
   </div>
 </template>
@@ -54,40 +58,47 @@ export default defineComponent({
 <style scoped lang="scss">
 .basic-radio {
   display: flex;
-  padding: 8rem 4rem;
   .raido-wrap {
-    input[type="radio"],
+    height: 36rem;
     label {
-      margin: 0;
+      user-select: none;
       cursor: pointer;
-    }
-    label {
-      padding: 4rem 8rem;
+      height: 100%;
+      padding: 4rem 16rem;
       border: 1rem solid $COLOR_ORANGE;
       border-radius: 4rem;
+      align-items: center;
+      background-color: $COLOR_WHITE;
+      color: $COLOR_ORANGE;
+      transition: all 0.3s ease-out;
     }
     input[type="radio"] {
-      appearance: none;
+      display: none;
       &:checked {
         + label {
           background-color: $COLOR_ORANGE;
           color: $COLOR_WHITE;
-          transition: all 0.3s ease-out;
         }
       }
     }
   }
-}
-.horizontal {
-  flex-direction: row;
-  .raido-wrap + .raido-wrap {
-    margin-left: 8rem;
+  &.horizontal {
+    flex-direction: row;
+    .raido-wrap + .raido-wrap {
+      margin-left: 8rem;
+    }
+    label {
+      display: flex;
+    }
   }
-}
-.vertical {
-  flex-direction: column;
-  .raido-wrap + .raido-wrap {
-    margin-top: 16rem;
+  &.vertical {
+    flex-direction: column;
+    .raido-wrap + .raido-wrap {
+      margin-top: 8rem;
+    }
+    label {
+      display: flex;
+    }
   }
 }
 </style>

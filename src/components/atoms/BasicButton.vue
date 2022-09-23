@@ -40,19 +40,22 @@ export default defineComponent({
 <style scoped lang="scss">
 .button-wrap {
   width: 100%;
+  height: 36rem;
   button {
     width: 100%;
+    height: 100%;
+    user-select: none;
     cursor: pointer;
     padding: 4rem 20rem;
     border: 0;
     &.primary {
       color: #fff;
-      background: $COLOR_ORANGE;
+      background-color: $COLOR_ORANGE;
       border: $COLOR_ORANGE 1rem solid;
     }
     &.secondary {
       color: $COLOR_ORANGE;
-      background: $COLOR_WHITE;
+      background-color: $COLOR_WHITE;
       border: $COLOR_ORANGE 1rem solid;
     }
     &:hover {
