@@ -14,6 +14,8 @@ import { SetupCalendar, DatePicker } from "v-calendar";
 
 import vClickOutside from 'click-outside-vue3'
 
+import router from './router'
+
 library.add(faCalendarDays);
 library.add(faCircleUser);
 library.add(faMagnifyingGlass);
@@ -21,6 +23,7 @@ library.add(faMagnifyingGlass);
 createApp(App)
   .use(SetupCalendar, {})
   .use(vClickOutside)
+  .use(router)
   .component("font-awesome-icon", FontAwesomeIcon)
   .component('DatePicker', DatePicker)
   .mount("#app");
