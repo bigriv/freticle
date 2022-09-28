@@ -5,6 +5,7 @@
       type="text"
       :placeholder="placeholder"
       :disabled="disabled"
+      :rows="rows"
     />
   </div>
 </template>
@@ -25,6 +26,10 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+    rows: {
+      type: Number,
+      default: 5
+    }
   },
   emits: ["update:modelValue"],
   setup(props, { emit }) {
@@ -47,7 +52,7 @@ export default defineComponent({
     height: 100%;
     padding: 8rem 12rem;
     background-color: $COLOR_LIGHT_GRAY;
-    border: none;
+    border: 4rem solid $COLOR_GRAY;
     &:focus-visible {
       outline: none;
     }
