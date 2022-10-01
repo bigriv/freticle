@@ -1,7 +1,7 @@
 import BasicLayout from "@/components/templates/BasicLayout.vue";
 
 export default {
-  title: "BasicLayout",
+  title: "templates/BasicLayout",
   component: BasicLayout,
 };
 

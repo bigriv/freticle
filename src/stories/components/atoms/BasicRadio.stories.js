@@ -1,7 +1,7 @@
 import BasicRadio from "@/components/atoms/BasicRadio.vue";
 
 export default {
-  title: "BasicRadio",
+  title: "atoms/BasicRadio",
   component: BasicRadio,
 };
 

@@ -1,7 +1,7 @@
 import BasicInput from "@/components/atoms/BasicInput.vue";
 
 export default {
-  title: "BasicInput",
+  title: "atoms/BasicInput",
   component: BasicInput,
 };
 

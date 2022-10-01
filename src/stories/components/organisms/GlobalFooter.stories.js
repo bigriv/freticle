@@ -1,7 +1,7 @@
 import GlobalFooter from "@/components/organisms/GlobalFooter.vue";
 
 export default {
-  title: "GlobalFooter",
+  title: "organisms/GlobalFooter",
   component: GlobalFooter,
 };
 

@@ -1,7 +1,7 @@
 import BasicSwitch from "@/components/atoms/BasicSwitch.vue";
 
 export default {
-  title: "BasicSwitch",
+  title: "atoms/BasicSwitch",
   component: BasicSwitch,
 };
 

@@ -1,7 +1,7 @@
 import BasicSelect from "@/components/atoms/BasicSelect.vue";
 
 export default {
-  title: "BasicSelect",
+  title: "atoms/BasicSelect",
   component: BasicSelect,
 };
 

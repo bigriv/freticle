@@ -1,7 +1,7 @@
 import ReaderSearch from "@/components/views/reader/ReaderSearch.vue";
 
 export default {
-  title: "ReaderSearch",
+  title: "views/ReaderSearch",
   component: ReaderSearch,
 };
 

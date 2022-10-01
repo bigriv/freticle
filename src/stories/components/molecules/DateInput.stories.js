@@ -1,7 +1,7 @@
 import DateInput from "@/components/molecules/DateInput.vue";
 
 export default {
-  title: "DateInput",
+  title: "molecules/DateInput",
   component: DateInput,
 };
 

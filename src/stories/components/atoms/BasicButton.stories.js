@@ -1,7 +1,7 @@
 import BasicButton from "@/components/atoms/BasicButton.vue";
 
 export default {
-  title: "BasicButton",
+  title: "atoms/BasicButton",
   component: BasicButton,
 };
 

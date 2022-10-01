@@ -1,7 +1,7 @@
 import BasicInputArea from "@/components/atoms/BasicInputArea.vue";
 
 export default {
-  title: "BasicInputArea",
+  title: "atoms/BasicInputArea",
   component: BasicInputArea,
 };
 

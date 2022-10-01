@@ -1,7 +1,7 @@
 import GlobalHeader from "@/components/organisms/GlobalHeader.vue";
 
 export default {
-  title: "GlobalHeader",
+  title: "organisms/GlobalHeader",
   component: GlobalHeader,
 };
 

@@ -1,7 +1,7 @@
 import BasicIcon from "@/components/atoms/BasicIcon.vue";
 
 export default {
-  title: "BasicIcon",
+  title: "atoms/BasicIcon",
   component: BasicIcon,
 };
 
