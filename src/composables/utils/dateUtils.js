@@ -2,7 +2,7 @@ import moment from "moment";
 
 export const DATE_FORMAT = {
   YEAR_TO_DAY: "YYYY/MM/DD",
-  YEAR_TO_MINUES: "YYYY/MM/DD HH:mm",
+  YEAR_TO_MINUTES: "YYYY/MM/DD HH:mm",
   YEAR_TO_SECONDS: "YYYY/MM/DD HH:mm:ss",
 };
 

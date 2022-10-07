@@ -28,10 +28,8 @@ main {
   min-width: 100%;
   min-height: 100%;
   background-color: $COLOR_DARK_GREEN;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 80rem 60rem;
+  padding: 80rem 0;
+  margin: auto;
   .main-content {
     min-width: 600rem;
     width: 80%;

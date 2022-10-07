@@ -6,7 +6,7 @@
     v-click-outside="() => (state.isShowCalender = false)"
   >
     <div class="input-text-box">
-      <BasicInput v-model="state.date" :readonly="true" type="text" />
+      <BasicInput v-model="state.date" :readonly="true" :placeholder="placeholder" type="text" />
       <BasicIcon icon="calendar-days" class="calender-icon" />
     </div>
     <transition>
@@ -48,6 +48,10 @@ export default defineComponent({
         return ["date", "dateTime"].includes(value);
       },
     },
+    placeholder: {
+      type: String,
+      default: "",
+    },
   },
   emits: ["update:modelValue"],
   setup(props, { emit }) {
@@ -79,25 +83,16 @@ export default defineComponent({
   .input-text-box {
     width: 100%;
     position: relative;
-    input {
-      width: 100%;
-      padding: 8rem 12rem;
-      background-color: $COLOR_LIGHT_GRAY;
-      border: none;
-      &:focus {
-        outline: none;
-      }
-      &:disabled {
-        background-color: $COLOR_GRAY;
-        color: $COLOR_DARK_GRAY;
-        cursor: not-allowed;
-      }
+    ::v-deep(input[type="text"]) {
+      cursor: pointer;
     }
+
     .calender-icon {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 8rem;
+      color: $COLOR_GRAY;
     }
   }
   .v-enter-active,
@@ -116,8 +111,10 @@ export default defineComponent({
   }
   .calender {
     position: absolute;
-    top: 50rem;
-    left: 0;
+    z-index: 100;
+    top: 0;
+    right: 0rem;
+    transform: translate(100%, -50%);
   }
 }
 </style>

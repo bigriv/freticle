@@ -1,6 +1,53 @@
 * {
-    font-family: "UD デジタル 教科書体 N-R";
-    font-weight: 600;
-    font-size: 14rem;
-    box-sizing: border-box;
+  font-family: "UD デジタル 教科書体 N-R";
+  font-weight: 600;
+  font-size: 14rem;
+  box-sizing: border-box;
+}
+
+@for $i from 1 through 20 {
+  .mga-#{$i*5} {
+    margin: #{$i * 5}rem !important;
+  }
+  .mgt-#{$i*5} {
+    margin-top: #{$i * 5}rem !important;
+  }
+  .mgl-#{$i*5} {
+    margin-left: #{$i * 5}rem !important;
+  }
+}
+
+// contents
+.small-content {
+  width: 160rem;
+}
+.medium-content {
+  width: 220rem;
+}
+.large-content {
+  width: 280rem;
+}
+
+// modal
+.modal-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .modal-head {
+    font-size: 20rem;
+  }
+  .modal-link {
+    font-size: 12rem;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+// display
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }

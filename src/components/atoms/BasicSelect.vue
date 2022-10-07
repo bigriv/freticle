@@ -71,7 +71,6 @@ export default defineComponent({
 .v-leave-from {
   opacity: 1;
   transform: translateY(0);
-
 }
 .select-wrap {
   position: relative;
@@ -101,6 +100,9 @@ export default defineComponent({
   .select-options {
     border: 4rem solid $COLOR_GRAY;
     margin-top: 8rem;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
     .select-options-item {
       padding: 4rem 4rem;
       width: 100%;
