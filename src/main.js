@@ -15,14 +15,15 @@ import { SetupCalendar, DatePicker } from "v-calendar";
 
 import vClickOutside from "click-outside-vue3";
 
-import router from "./router";
+import router from "@/router";
+import store from './store'
 
 library.add(faCalendarDays);
 library.add(faCircleUser);
 library.add(faMagnifyingGlass);
 library.add(faXmark);
 
-createApp(App)
+createApp(App).use(store)
   .use(SetupCalendar, {})
   .use(vClickOutside)
   .use(router)
