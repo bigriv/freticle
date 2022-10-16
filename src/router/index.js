@@ -11,6 +11,27 @@ const routes = [
         name: "ReaderSearch",
         component: () => import("@/components/views/reader/ReaderSearch.vue"),
       },
+      {
+        path: "article",
+        name: "ReadArticle",
+        component: () => import("@/components/views/reader/ReadArticle.vue"),
+      },
+    ],
+  },
+  {
+    path: "/mypage",
+    component: BasicLayout,
+    children: [
+      {
+        path: "",
+        name: "WriterSearch",
+        component: () => import("@/components/views/writer/WriterSearch.vue"),
+      },
+      {
+        path: "write",
+        name: "CreateArticle",
+        component: () => import("@/components/views/writer/CreateArticle.vue"),
+      },
     ],
   },
 ];
