@@ -46,7 +46,7 @@ export default defineComponent({
     height: 100%;
     user-select: none;
     cursor: pointer;
-    padding: 4rem 20rem;
+    padding: 4rem 12rem;
     border: 0;
     &.primary {
       color: #fff;
@@ -59,13 +59,12 @@ export default defineComponent({
       border: $COLOR_ORANGE 1rem solid;
     }
     &:hover {
-      opacity: 0.6;
       box-shadow: 1rem 1rem 2rem $COLOR_BLACK;
       transition: all 0.2s;
     }
     &:active {
-      opacity: 1;
       box-shadow: none;
+      transform: translate(1rem, 1rem);
     }
   }
 }

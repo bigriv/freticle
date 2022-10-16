@@ -1,11 +1,13 @@
 <template>
   <GlobalHeader />
   <main>
-    <div class="main-content">
-      <router-view />
-    </div>
-    <div class="side-menu">
-      <div class="advertisement"></div>
+    <div class="content-wrap">
+      <div class="main-content">
+        <router-view />
+      </div>
+      <div class="side-menu">
+        <div class="advertisement"></div>
+      </div>
     </div>
   </main>
   <GlobalFooter />
@@ -24,25 +26,29 @@ export default defineComponent({
 
 <style scoped lang="scss">
 main {
-  display: flex;
-  min-width: 100%;
-  min-height: 100%;
+  min-height: calc(100% - 30rem);
   background-color: $COLOR_DARK_GREEN;
-  padding: 80rem 0;
-  margin: auto;
-  .main-content {
-    min-width: 600rem;
-    width: 80%;
-  }
-  .side-menu {
-    min-width: 300rem;
-    width: 20%;
-    margin-left: 60rem;
-    .advertisement {
-      margin: auto;
-      width: 200rem;
-      height: 160rem;
-      background-color: $COLOR_GRAY;
+  .content-wrap {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    padding-top: 84rem;
+    padding-bottom: 40rem;
+    margin: auto;
+    .main-content {
+      min-width: 800rem;
+      max-width: 800rem;
+    }
+    .side-menu {
+      min-width: 300rem;
+      max-width: 300rem;
+      margin-left: 60rem;
+      .advertisement {
+        margin: auto;
+        width: 200rem;
+        height: 160rem;
+        background-color: $COLOR_GRAY;
+      }
     }
   }
 }

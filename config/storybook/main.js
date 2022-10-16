@@ -11,6 +11,7 @@ module.exports = {
         font-size: 6.25%;
         width: 100%;
         height: 100%;
+        min-width: 1200rem;
       }
       body {
         width: 100%;
